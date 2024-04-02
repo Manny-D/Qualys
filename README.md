@@ -8,11 +8,40 @@ In this project, I will go through the process of installing a Qualys Virtual Sc
 
 <b>Note:</b> This is utilizing the Qualys Community Edition. 
 
-### Download Qualys Virtual Scanner
+### Download & Configure Qualys Virtual Scanner Appliance
 From the main page, click on Download a virtual scanner listed next to number 2, <b>Configure a scanner appliances > <br>
 ![Screenshot 2024-04-01 at 6 28 02 PM (3)](https://github.com/Manny-D/Qualys/assets/99146530/e1eb5662-b6da-4589-b94e-0f62e2013615) <br>
 
-In the pop-up that appears, under Get Started, click on Start Wizard <br>
+In the Add New Virtual Scanner pop-up that appears, under Get Started, click on Start Wizard. <br>
 ![Screenshot 2024-04-01 at 6 34 59 PM](https://github.com/Manny-D/Qualys/assets/99146530/5dddb944-7e9a-48c8-a821-e2ce848bd947) <br>
 
-and name your scanner whatever you want it to be. 
+Name your scanner whatever you want it to be and click Next. <br>
+![Screenshot 2024-04-01 at 7 48 12 PM](https://github.com/Manny-D/Qualys/assets/99146530/04f2d880-a2c7-4406-8fb9-6a3bd5b4a722) <br>
+
+Under Choose a Virtualization Platform, in this one I selected VMWare ESXi, vCenter Server (standard) since Virtual Box was being used. <br>
+![Screenshot 2024-04-01 at 8 04 00 PM](https://github.com/Manny-D/Qualys/assets/99146530/6ee8e948-d919-4856-971e-22076495d6f6) <br>
+(see supported Virtualization Platforms [here](https://docs.qualys.com/en/scanner/supported-platform/get_started/supported_virtualization_platforms.htm).) <br>
+
+Click Next so that it begins the download of your .ova file.
+
+The Add New Virtual Scanner pop-up will still be visible, scroll down to the bottom and click Next. <br>
+You will now be given you Personalization Code to be used once the Qualys Virtual Scanner Appliance is installed: <br>
+![Screenshot 2024-04-01 at 8 31 30 PM](https://github.com/Manny-D/Qualys/assets/99146530/516ab9da-3de1-4a22-a780-85100e4c9657) <br>
+
+<br>
+
+Once .ova file is downloaded, within VirtualBox Manager, click on File -> Import Appliance <br>
+
+You will see the following pop-up. Click on the folder icon (to the far right of File):
+![Screenshot 2024-04-01 at 8 11 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/b9b18f3b-4efc-47bd-b6b1-328b7076ce08) <br>
+
+Select the .ova file that was downloaded -> Next -> Next <br>
+
+You will see the next pop-up where you can click on Finish <br>
+![Screenshot 2024-04-01 at 8 11 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/27392753-22ae-4dd9-aee8-a293a68aa290) <br>
+
+<br>
+
+Once the Qualys Virtual Scanner Appliance is installed, double click on it and the Qualys Scanner Console will open. <br>
+![Screenshot 2024-04-01 at 8 22 20 PM](https://github.com/Manny-D/Qualys/assets/99146530/b6d8b640-83ea-434e-baf4-a12b2c479a1e) <br>
+Enter the personalization code you were provided here, and it will connect to your Qualys Cloud Profile. <br>
