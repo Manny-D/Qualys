@@ -98,7 +98,7 @@ Click on the Scans tab -> New -> Scan: <br>
 
 In the Launch Vulnerability Scan pop-up: add a Title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning (not shown in the screenshot), then click Launch: <br>
 ![Screenshot 2024-04-01 at 9 48 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/c14f5526-74a1-4549-956b-da9a610f3d52) <br>
-<b>Note</b>: unless specified, all the other options / settings can be left at their defaults. <br>
+<b>Note</b>: Unless specified, all the other options / settings can be left at their defaults. <br>
 
 <br>
 
@@ -169,7 +169,7 @@ Click on the Scans tab -> New -> Scan <br>
 
 Enter a new title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning, then click Launch: <br>
 ![Screenshot 2024-04-01 at 10 50 13 PM](https://github.com/Manny-D/Qualys/assets/99146530/b819e873-c325-4eb2-87cc-75f7850a63f1) <br>
-<b>Note</b>: the screenshot is does not show all the correctly selected fields <br>
+<b>Note</b>: The screenshot does not show all the correctly selected fields. <br>
 
 <br>
 
