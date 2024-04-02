@@ -33,7 +33,7 @@ You will now be given you Personalization Code to be used once the Qualys Virtua
 Once .ova file is downloaded, within VirtualBox Manager, click on File -> Import Appliance <br>
 
 You will see the following pop-up. Click on the folder icon (to the far right of File):
-![Screenshot 2024-04-01 at 8 11 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/b9b18f3b-4efc-47bd-b6b1-328b7076ce08) <br>
+![Screenshot 2024-04-01 at 8 09 09 PM](https://github.com/Manny-D/Qualys/assets/99146530/92e605fc-8647-4a61-9017-172ee6a13f19) <br>
 
 Select the .ova file that was downloaded -> Next -> Next <br>
 
@@ -42,6 +42,32 @@ You will see the next pop-up where you can click on Finish <br>
 
 <br>
 
-Once the Qualys Virtual Scanner Appliance is installed, double click on it and the Qualys Scanner Console will open. <br>
+Once the Qualys Virtual Scanner Appliance is installed in VirtualBox, double click on it and the Qualys Scanner Console will open. <br>
 ![Screenshot 2024-04-01 at 8 22 20 PM](https://github.com/Manny-D/Qualys/assets/99146530/b6d8b640-83ea-434e-baf4-a12b2c479a1e) <br>
-Enter the personalization code you were provided here, and it will connect to your Qualys Cloud Profile. <br>
+Enter the personalization code you were provided in the pop-up, and it will connect to your Qualys Cloud Profile. <br>
+
+When the Scanner Appliance is connected to your Cloud Profile, another popup will appear with the Virtual Scanner Name you provided and the IP address it was assigned within VirtualBox. <br>
+![Screenshot 2024-04-01 at 8 47 46 PM](https://github.com/Manny-D/Qualys/assets/99146530/bad1a7cf-7e08-4b6f-a6b8-82af047c4261) <br>
+
+Go back to the Add New Virtual Scanner pop-up, scroll to the bottom and click on Check Activation: <br>
+![Screenshot 2024-04-01 at 8 49 10 PM](https://github.com/Manny-D/Qualys/assets/99146530/ccadfc92-7837-43d2-8b62-bef53dd6f359) <br>
+
+Upon verification <br>
+![Screenshot 2024-04-01 at 8 53 19 PM](https://github.com/Manny-D/Qualys/assets/99146530/98cba90a-8abe-4e23-add3-087a1ab34e05) <br>
+
+the Scanner Appliance will appear under the Appliances tab in your Cloud Profile: <br>
+![Screenshot 2024-04-01 at 8 52 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/d6c02009-c184-4064-b8d9-760e1b65f1f1) <br>
+
+Now we need to setup the scanning range that Qualys will be scanning. <br>
+Click on Assets -> Add IP's for Scanning <br>
+![Screenshot 2024-04-01 at 8 57 15 PM](https://github.com/Manny-D/Qualys/assets/99146530/6a1681b8-6de2-4520-89b2-d2aa3b6f87e9) <br>
+
+Click on New -> IP Tracked Addresses <br>
+![Screenshot 2024-04-01 at 8 58 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/a4cf5c4e-d762-4856-8980-cb3c8b9cb7e5) <br>
+
+In the Add Hosts pop-up, click Subscription IPs and add the IPs that your home router provides: <br>
+![Screenshot 2024-04-01 at 9 01 22 PM](https://github.com/Manny-D/Qualys/assets/99146530/7de32e19-fd7f-459b-9b3f-dca9cdc84560) <br>
+
+Once added, scroll to the bottom of the pop-up and click Add and the configuration should be completed! <br>
+![Screenshot 2024-04-01 at 9 06 06 PM](https://github.com/Manny-D/Qualys/assets/99146530/89a4ff75-2a24-45d8-ab06-6b137b4b7a5e) <br>
+
