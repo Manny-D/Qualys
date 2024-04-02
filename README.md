@@ -115,4 +115,22 @@ So we will run an Authenticated Scan next!
 <br>
 
 ### Running an Authenticated Scan
+<b>Important note</b>: 
+In order for the authenticated scan to work properly, I will need to update specific settings in the Admin profile being used within the Windows VM. Under normal circumstances, the Qualys scanning profile would already have this pre-configured. <br>
 
+<b>Services</b>: <br>
+For both Remote Registry and Server <br>
+Startup type: Automatic <br>
+Manually Start (if not already running) <br>
+
+<b>Advanced sharing settings</b>: <br>
+Confirm Network Discovery and File and printer sharing are both on. <br> 
+
+<b>User Account Control (UAC) Settings</b>: <br>
+Set to Never notify <br>
+
+<b>Windows Registry</b>: <br>
+Create a new entry under: <br> 
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -> right click -> New -> DWORD (32-bit) Value <br>
+Value name: LocalAccountTokenFilterPolicy <br>
+Value data: 1 <br>
