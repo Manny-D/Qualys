@@ -108,14 +108,16 @@ If it fails, you may need to check if the Windows Firewall / Defender is enabled
 
 <br>
 
+#### Non-Authenticated Scan Results
 The scan yielded negligable results: <br>
 ![Screenshot 2024-04-01 at 10 00 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/63ca8466-cfa0-4ebd-ac36-d7e29d1faf08) <br>
+
 So we will run an Authenticated Scan next!
 
 <br>
 
 ### Authenticated Scan - Initial Setup
-<b>Important note</b>: 
+<b>Important note</b>: <br>
 In order for the authenticated scan to work properly, I will need to update specific settings in the Admin profile being used within the Windows VM. Under normal circumstances, the Qualys scanning profile would already have this pre-configured. <br>
 
 <b>Services</b>: <br>
@@ -166,10 +168,24 @@ Click on the Scans tab -> New -> Scan <br>
 ![Screenshot 2024-04-01 at 10 46 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/ab210388-db24-436d-a911-ffda7f68a75f) <br>
 
 Enter a new title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning, then click Launch: <br>
-![Screenshot 2024-04-01 at 10 50 13 PM](https://github.com/Manny-D/Qualys/assets/99146530/b819e873-c325-4eb2-87cc-75f7850a63f1)
+![Screenshot 2024-04-01 at 10 50 13 PM](https://github.com/Manny-D/Qualys/assets/99146530/b819e873-c325-4eb2-87cc-75f7850a63f1) <br>
 <b>Note</b>: the screenshot is does not show all the correctly selected fields <br>
 
 <br>
 
 Qualys should now be running an authenticated scan: <br>
 ![Screenshot 2024-04-01 at 9 57 07 PM](https://github.com/Manny-D/Qualys/assets/99146530/d400a361-fbc0-4de6-b3bb-c97f1f7332af) <br>
+
+<br>
+
+#### Authenticated Scan Results <br>
+117 Vulnerabilities! <br>
+![Screenshot 2024-04-01 at 10 59 57 PM](https://github.com/Manny-D/Qualys/assets/99146530/d016a8bb-4374-456b-b482-21c4b29037ab) <br>
+
+<br>
+
+### Remediating Vulnerabilities and Re-scanning to Verify Results <br>
+Ran Windows Update and downloaded updates / patches for various software on the VM. <br>
+
+Then did another authenticated scan. Vulnerabilities reduced to 27. <br>
+![Screenshot 2024-04-01 at 11 08 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/3cf3f6c0-fb94-484e-92ac-8dc7f2a4dca7) <br>
