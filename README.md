@@ -77,3 +77,26 @@ In the Add Hosts pop-up, click Subscription IPs and add the IPs that your home r
 Once added, scroll to the bottom of the pop-up and click Add and the configuration should be completed: <br>
 ![Screenshot 2024-04-01 at 9 06 06 PM](https://github.com/Manny-D/Qualys/assets/99146530/89a4ff75-2a24-45d8-ab06-6b137b4b7a5e) <br>
 
+<br>
+
+### Setting up a Scan
+In the Qualys Cloud, click on Scans -> Option Profiles -> New -> Option Profile: <br>
+![Screenshot 2024-04-01 at 9 31 33 PM](https://github.com/Manny-D/Qualys/assets/99146530/daccdd75-da79-4313-9574-4d48a90751ff) <br>
+
+In the New Option Profile pop-up, in the Option Profile Title section, enter a Title: <br>
+![Screenshot 2024-04-01 at 9 32 42 PM](https://github.com/Manny-D/Qualys/assets/99146530/2c0a4016-51eb-496f-b198-6a74aba19874) <br>
+As we'll be performing a non-authenticated scan first, click on Save.
+
+The new Scan Profile should now appear: <br>
+![Screenshot 2024-04-01 at 9 41 54 PM](https://github.com/Manny-D/Qualys/assets/99146530/57477bbb-9a9a-49a3-8458-6b05dbb410f1) <br>
+
+<br>
+
+#### Running a Non-Authenticated Scan
+Click on the Scans tab -> New -> Scan: <br>
+![Screenshot 2024-04-01 at 9 43 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/fcb296fb-4e14-44e0-b37e-a603e58c4718) <br>
+
+In the Launch Vulnerability Scan pop-up: add a Title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning (not shown in the screenshot), then click Launch: <br>
+![Screenshot 2024-04-01 at 9 48 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/c14f5526-74a1-4549-956b-da9a610f3d52) <br>
+<b>Note</b>: unless specified, all the other options / settings can be left at their defaults. <br>
+
