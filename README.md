@@ -47,6 +47,8 @@ Once the Qualys Virtual Scanner Appliance is installed in VirtualBox, double cli
 ![Screenshot 2024-04-01 at 8 22 20 PM](https://github.com/Manny-D/Qualys/assets/99146530/b6d8b640-83ea-434e-baf4-a12b2c479a1e) <br>
 Enter the personalization code you were provided in the pop-up, and it will connect to your Qualys Cloud Profile. <br>
 
+<br>
+
 When the Scanner Appliance is connected to your Cloud Profile, another popup will appear with the Virtual Scanner Name you provided and the IP address it was assigned within VirtualBox: <br>
 ![Screenshot 2024-04-01 at 8 47 46 PM](https://github.com/Manny-D/Qualys/assets/99146530/bad1a7cf-7e08-4b6f-a6b8-82af047c4261) <br>
 
@@ -59,6 +61,7 @@ Upon verification <br>
 the Scanner Appliance will appear under the Appliances tab in your Cloud Profile: <br>
 ![Screenshot 2024-04-01 at 8 52 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/d6c02009-c184-4064-b8d9-760e1b65f1f1) <br>
 
+<br>
 
 Now we need to setup the scanning range that Qualys will be scanning. <br>
 
