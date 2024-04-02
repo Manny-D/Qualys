@@ -114,7 +114,7 @@ So we will run an Authenticated Scan next!
 
 <br>
 
-### Running an Authenticated Scan
+### Authenticated Scan - Initial Setup
 <b>Important note</b>: 
 In order for the authenticated scan to work properly, I will need to update specific settings in the Admin profile being used within the Windows VM. Under normal circumstances, the Qualys scanning profile would already have this pre-configured. <br>
 
@@ -134,3 +134,42 @@ Create a new entry under: <br>
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -> right click -> New -> DWORD (32-bit) Value <br>
 Value name: LocalAccountTokenFilterPolicy <br>
 Value data: 1 <br>
+
+<br>
+
+### Running an Authenticated Scan
+Click on Scans -> Authentication -> New -> Operating Systems -> Windows <br>
+![Screenshot 2024-04-01 at 10 27 15 PM](https://github.com/Manny-D/Qualys/assets/99146530/30a854fe-72ed-435d-a317-191857f8dd28) <br>
+
+In the New Windows Record pop-up, enter a title: <br>
+![Screenshot 2024-04-01 at 10 28 41 PM](https://github.com/Manny-D/Qualys/assets/99146530/a15528a4-1036-4692-ac72-39d53c402de6) <br>
+
+Click on the Login Credentals section -> Windows Authentication, tick Local -> under Login, enter in the Windows VM Admin credentials: <br>
+![Screenshot 2024-04-01 at 10 32 16 PM](https://github.com/Manny-D/Qualys/assets/99146530/99fa913e-3967-4326-9a6b-387ea60774e2) <br>
+
+Click on IPs -> add the IP of the Windows VM -> Save: <br>
+![Screenshot 2024-04-01 at 10 34 42 PM](https://github.com/Manny-D/Qualys/assets/99146530/5787928b-0bad-4156-b93d-877ffd0fc815) <br>
+
+<br>
+
+Click on Option Profiles -> tick the Basic Net Scan -> move to the right and click on the yellow down arrow -> Edit: <br>
+![Screenshot 2024-04-01 at 10 42 08 PM](https://github.com/Manny-D/Qualys/assets/99146530/db598625-2b2b-43ea-925c-1d1773922d6a) <br>
+
+In the Edit Option Profile pop-up, click on Scan -> scroll down to Authentication -> tick Windows -> scroll down -> Save: <br>
+![Screenshot 2024-04-01 at 10 44 09 PM](https://github.com/Manny-D/Qualys/assets/99146530/4a136474-a774-4330-a057-f23ffe9a9282) <br>
+
+<br>
+
+Let's create a new scan title to differentiate between the non-authenticated and authenticated scans!
+
+Click on the Scans tab -> New -> Scan <br>
+![Screenshot 2024-04-01 at 10 46 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/ab210388-db24-436d-a911-ffda7f68a75f) <br>
+
+Enter a new title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning, then click Launch: <br>
+![Screenshot 2024-04-01 at 10 50 13 PM](https://github.com/Manny-D/Qualys/assets/99146530/b819e873-c325-4eb2-87cc-75f7850a63f1)
+<b>Note</b>: the screenshot is does not show all the correctly selected fields <br>
+
+<br>
+
+Qualys should now be running an authenticated scan: <br>
+![Screenshot 2024-04-01 at 9 57 07 PM](https://github.com/Manny-D/Qualys/assets/99146530/d400a361-fbc0-4de6-b3bb-c97f1f7332af) <br>
