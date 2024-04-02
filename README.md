@@ -186,6 +186,6 @@ Qualys should now be running an authenticated scan: <br>
 
 ### Remediating Vulnerabilities and Re-scanning to Verify Results <br>
 Ran Windows Update and downloaded updates / patches for various software on the VM. <br>
-
-Then did another authenticated scan. Vulnerabilities reduced to 27. <br>
+Performed another authenticated scan. <br> 
+Vulnerabilities were reduced to 27. <br>
 ![Screenshot 2024-04-01 at 11 08 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/3cf3f6c0-fb94-484e-92ac-8dc7f2a4dca7) <br>
