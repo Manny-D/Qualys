@@ -92,11 +92,27 @@ The new Scan Profile should now appear: <br>
 
 <br>
 
-#### Running a Non-Authenticated Scan
+### Running a Non-Authenticated Scan
 Click on the Scans tab -> New -> Scan: <br>
 ![Screenshot 2024-04-01 at 9 43 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/fcb296fb-4e14-44e0-b37e-a603e58c4718) <br>
 
 In the Launch Vulnerability Scan pop-up: add a Title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning (not shown in the screenshot), then click Launch: <br>
 ![Screenshot 2024-04-01 at 9 48 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/c14f5526-74a1-4549-956b-da9a610f3d52) <br>
 <b>Note</b>: unless specified, all the other options / settings can be left at their defaults. <br>
+
+<br>
+
+Qualys should now be running a non-authenticated scan: <br>
+![Screenshot 2024-04-01 at 9 57 07 PM](https://github.com/Manny-D/Qualys/assets/99146530/d400a361-fbc0-4de6-b3bb-c97f1f7332af) <br>
+If it fails, you may need to check if the Windows Firewall / Defender is enabled on your VM. If so, disable it and run the scan again. <br>
+
+<br>
+
+The scan yielded negligable results: <br>
+![Screenshot 2024-04-01 at 10 00 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/63ca8466-cfa0-4ebd-ac36-d7e29d1faf08) <br>
+So we will run an Authenticated Scan next!
+
+<br>
+
+### Running an Authenticated Scan
 
