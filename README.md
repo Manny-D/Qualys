@@ -20,9 +20,9 @@ In the Add New Virtual Scanner pop-up that appears, under Get Started, click on 
 Name your scanner whatever you want it to be and click Next: <br>
 ![Screenshot 2024-04-01 at 7 48 12 PM](https://github.com/Manny-D/Qualys/assets/99146530/04f2d880-a2c7-4406-8fb9-6a3bd5b4a722) <br>
 
-Under Choose a Virtualization Platform, select VMWare ESXi, vCenter Server (standard) (this applies to VirtualBox): <br>
+Under Choose a Virtualization Platform, select VMWare ESXi, vCenter Server (standard): <br>
 ![Screenshot 2024-04-01 at 8 04 00 PM](https://github.com/Manny-D/Qualys/assets/99146530/6ee8e948-d919-4856-971e-22076495d6f6) <br>
-(see supported Virtualization Platforms [here](https://docs.qualys.com/en/scanner/supported-platform/get_started/supported_virtualization_platforms.htm).) <br>
+<b>Note</b>: This applies to VirtualBox - see supported Virtualization Platforms [here](https://docs.qualys.com/en/scanner/supported-platform/get_started/supported_virtualization_platforms.htm). <br>
 
 Click Next so that it begins the download of your .ova file.
 
@@ -39,7 +39,7 @@ You will see the following pop-up. Click on the folder icon (to the far right of
 ![Screenshot 2024-04-01 at 8 09 09 PM](https://github.com/Manny-D/Qualys/assets/99146530/92e605fc-8647-4a61-9017-172ee6a13f19) <br>
 
 Select the .ova file that was downloaded -> Next -> Next -> Finish: <br>
-![Screenshot 2024-04-01 at 8 11 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/27392753-22ae-4dd9-aee8-a293a68aa290) <br>
+![ImpVirtApp](https://github.com/Manny-D/Qualys/assets/99146530/77f40bc3-2558-4962-a0b6-1b9269281c86) <br>
 
 <br>
 
