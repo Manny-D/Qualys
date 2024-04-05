@@ -4,7 +4,7 @@
 
 ## Description
 
-In this project, I will go through the process of installing a Qualys Virtual Scanner Appliance using VirtualBox, which will then be accessed through the Qualys Cloud Platform. Once configured, I will scan a Windows virtual machine, remediate the vulnerabilities and verify the VM is no longer vulnerable. 
+In this project, I will go through the process of installing a Qualys Virtual Scanner Appliance using VirtualBox, which will then be accessed through the Qualys Cloud Platform. Once configured, I will scan a Windows virtual machine, remediate the vulnerabilities, then re-scan and verify the vulnerabilities were addressed. 
 
 <b>Note:</b> The project is utilizing the Qualys Community Edition and assumes the following:
 - you have [VirtualBox](https://www.virtualbox.org/wiki/Downloads) already installed
