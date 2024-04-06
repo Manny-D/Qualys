@@ -179,8 +179,8 @@ Click on the Scans tab -> New -> Scan <br>
 
 On the Launch Vulnerability Scan page, do the following: 
 - Enter a new Title
-- Option Profile: select the same one as used for the non-authenticated scan
-- Scanner Appliace: select the same one as used for the non-authenticated scan
+- Option Profile: select the same one used for the non-authenticated scan
+- Scanner Appliace: select the same one used for the non-authenticated scan
 - IPv4 Addresses/Ranges: add the IP(s) of what you're scanning
 - Click Launch <br><br>
 <b>Note</b>: The screenshot does not show all the correctly selected fields. <br>
