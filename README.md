@@ -200,11 +200,19 @@ Qualys will now run an authenticated scan: <br>
 
 <br>
 
-### Remediating Vulnerabilities and Re-scanning to Verify Results <br>
-Ran Windows Update and downloaded updates / patches for various software on the VM. <br>
-Performed another authenticated scan. <br> 
-Vulnerabilities were reduced to 27. <br>
+## Prioritizing and Remediating Vulnerabilities then Re-scanning to Verify Results <br>
+Qualys reports will detail each vulnerability, including its Severity, potential Impact, and a Solution section. <br>
+
+This section often suggests updates, patches, or configuration changes to address the issue. <br>
+![Screenshot 2024-04-05 at 8 41 43 PM](https://github.com/Manny-D/Qualys/assets/99146530/455a612b-6596-4614-b3ee-30c00f38d0d2) <br>
+
+We should focus on addressing critical and high-risk issues first, considering factors like exploitability and potential damage. Depending on the vulnerability, this might involve patching software, updating configurations, or removing unused components. After applying the "fixes", we can run another authenticated scan to validate our remediation efforts.
+
+<br>
+
 ![Screenshot 2024-04-01 at 11 08 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/3cf3f6c0-fb94-484e-92ac-8dc7f2a4dca7) <br>
+<br>
+Vulnerabilities were reduced to 27! 
 
 <br>
 
