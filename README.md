@@ -14,7 +14,7 @@ In this project, I will go through the process of installing a Qualys Virtual Sc
 <br>
 
 ### Download & Configure Qualys Virtual Scanner Appliance
-From the main page, click on <b>Download a virtual scanner</b> listed next to number 2, <b>Configure scanner appliances:</b> <br>
+From the main page, click on <b>Download a virtual scanner</b> listed next to: <b>2 Configure scanner appliances:</b> <br>
 ![Screenshot 2024-04-01 at 6 28 02 PM (3)](https://github.com/Manny-D/Qualys/assets/99146530/e1eb5662-b6da-4589-b94e-0f62e2013615) <br>
 
 In the Add New Virtual Scanner pop-up that appears, under Get Started, click on Start Wizard: <br>
