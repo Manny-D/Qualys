@@ -1,6 +1,10 @@
 # Qualys
 
-![Qualys](https://github.com/Manny-D/Qualys/assets/99146530/3a0d6890-1c57-4fd9-956a-4168835f94d1) <br>
+<p align="center">
+  <img src="https://github.com/Manny-D/Qualys/assets/99146530/451aef6f-cc52-425e-b59a-c4375b17933f" />
+</p>
+
+<br>
 
 ## Description
 
