@@ -108,11 +108,11 @@ Click on the <b>Scans</b> tab -> <b>New</b> -> <b>Scan</b>: <br>
 ![Screenshot 2024-04-01 at 9 43 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/fcb296fb-4e14-44e0-b37e-a603e58c4718) <br>
 
 In the Launch Vulnerability Scan pop-up, enter the following: 
-- <b>Title</b>
-- select the <b>Option Profile</b> created earlier
-- select the <b>Scanner Appliance</b> created at the beginning
-- add the <b>IPv4 Addresses/Ranges</b> of what you're scanning (not shown in the screenshot)
-- scroll down and click <b>Launch</b> <br>
+- <b>Title</b>: (create something you'll remember)
+- <b>Option Profile</b>: (select the one created earlier)
+- <b>Scanner Appliance</b>:  (select the one created at the beginning)
+- <b>IPv4 Addresses/Ranges</b>: (add the <b>IPv4 Addresses/Ranges</b> of what you're scanning (not shown in the screenshot))
+- Scroll down and click <b>Launch</b> <br>
 
 ![Screenshot 2024-04-01 at 9 48 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/c14f5526-74a1-4549-956b-da9a610f3d52) <br>
 <b>Note</b>: Unless specified, all the other options / settings can be left at their defaults. <br>
@@ -176,27 +176,28 @@ Click on <b>IPs</b> in the left pane -> add the IP of the Windows VM -> <b>Save<
 
 <br>
 
-Click on Option Profiles -> tick the Basic Net Scan -> move to the right and click on the yellow down arrow -> Edit: <br>
+Click on <b>Option Profiles</b> -> tick the <b>Basic Net Scan</b> -> look to the right and click on the <b>yellow down arrow</b> -> <b>Edit</b>: <br>
 ![Screenshot 2024-04-01 at 10 42 08 PM](https://github.com/Manny-D/Qualys/assets/99146530/db598625-2b2b-43ea-925c-1d1773922d6a) <br>
 
-In the Edit Option Profile pop-up, click on Scan -> scroll down to Authentication -> tick Windows -> scroll down -> Save: <br>
+In the <b>Edit Option Profile</b> pop-up, click <b>Scan</b> -> scroll down to <b>Authentication</b> -> tick <b>Windows</b> -> scroll down and click <b>Save</b>: <br>
 ![Screenshot 2024-04-01 at 10 44 09 PM](https://github.com/Manny-D/Qualys/assets/99146530/4a136474-a774-4330-a057-f23ffe9a9282) <br>
 
 <br>
 
 Let's create a new scan title to differentiate between the non-authenticated and authenticated scans!
 
-Click on the Scans tab -> New -> Scan <br>
+Click on <b>Scans</b> -> <b>Scans</b> tab -> <b>New</b> -> <b>Scan</b>: <br>
 ![Screenshot 2024-04-01 at 10 46 52 PM](https://github.com/Manny-D/Qualys/assets/99146530/ab210388-db24-436d-a911-ffda7f68a75f) <br>
 
 <br>
 
-On the Launch Vulnerability Scan page, do the following: 
-- Enter a new Title
-- Option Profile: select the same one used for the non-authenticated scan
-- Scanner Appliace: select the same one used for the non-authenticated scan
-- IPv4 Addresses/Ranges: add the IP(s) of what you're scanning
-- Click Launch <br><br>
+On the Launch Vulnerability Scan page, enter the following: 
+- <b>Title</b>: (create something you'll remember)
+- <b>Option Profile</b>: (select the same one used for the non-authenticated scan)
+- <b>Scanner Appliance</b>: (select the same one used for the non-authenticated scan)
+- <b>IPv4 Addresses/Ranges</b>: (add the <b>IPv4 Addresses/Ranges</b> of what you're scanning)
+- Scroll down and click <b>Launch</b> <br>
+
 <b>Note</b>: The screenshot does not show all the correctly selected fields. <br>
 ![Screenshot 2024-04-01 at 10 50 13 PM](https://github.com/Manny-D/Qualys/assets/99146530/b819e873-c325-4eb2-87cc-75f7850a63f1) <br>
 
@@ -208,7 +209,7 @@ Qualys will now run an authenticated scan: <br>
 
 <br>
 
-#### Authenticated Scan Results <br>
+### Authenticated Scan Results <br>
 117 Vulnerabilities! <br>
 ![Screenshot 2024-04-01 at 10 59 57 PM](https://github.com/Manny-D/Qualys/assets/99146530/d016a8bb-4374-456b-b482-21c4b29037ab) <br>
 
@@ -220,10 +221,9 @@ Qualys reports will detail each vulnerability, including its Severity, potential
 This section often suggests updates, patches, or configuration changes to address the issue. <br>
 ![Screenshot 2024-04-05 at 8 41 43 PM](https://github.com/Manny-D/Qualys/assets/99146530/455a612b-6596-4614-b3ee-30c00f38d0d2) <br>
 
-We should focus on addressing critical and high-risk issues first, considering factors like exploitability and potential damage. Depending on the vulnerability, this might involve patching software, updating configurations, or removing unused components. After applying the "fixes", we can run another authenticated scan to validate our remediation efforts.
+We should focus on addressing critical and high-risk issues first, considering factors like exploitability and potential damage. Depending on the vulnerability, this might involve patching software, updating configurations, or removing unused components. 
 
-<br>
-
+After applying the "fixes", we can run another authenticated scan to validate our remediation efforts.
 ![Screenshot 2024-04-01 at 11 08 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/3cf3f6c0-fb94-484e-92ac-8dc7f2a4dca7) <br>
 <br>
 Vulnerabilities were reduced to 27! 
