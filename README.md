@@ -91,23 +91,29 @@ The configuration should be completed with the IP(s) now listed.
 <br>
 
 ### Setting up a Scan
-In the Qualys Cloud, click on Scans -> Option Profiles -> New -> Option Profile: <br>
+In the Qualys Cloud, click on <b>Scans</b> -> <b>Option Profiles</b> -> <b>New</b> -> <b>Option Profile...</b> : <br>
 ![Screenshot 2024-04-01 at 9 31 33 PM](https://github.com/Manny-D/Qualys/assets/99146530/daccdd75-da79-4313-9574-4d48a90751ff) <br>
 
-In the New Option Profile pop-up, in the Option Profile Title section, enter a Title: <br>
+In the <b>New Option Profile</b> pop-up, under the <b>Option Profile Title</b> section, enter a <b>Title</b>: <br>
 ![Screenshot 2024-04-01 at 9 32 42 PM](https://github.com/Manny-D/Qualys/assets/99146530/2c0a4016-51eb-496f-b198-6a74aba19874) <br>
-As we'll be performing a non-authenticated scan first, click on Save.
+As we'll be performing a non-authenticated scan first, click on <b>Save</b>.
 
-The new Scan Profile should now appear: <br>
+The new Scan Profile should now be listed: <br>
 ![Screenshot 2024-04-01 at 9 41 54 PM](https://github.com/Manny-D/Qualys/assets/99146530/57477bbb-9a9a-49a3-8458-6b05dbb410f1) <br>
 
 <br>
 
 ### Running a Non-Authenticated Scan
-Click on the Scans tab -> New -> Scan: <br>
+Click on the <b>Scans</b> tab -> <b>New</b> -> <b>Scan</b>: <br>
 ![Screenshot 2024-04-01 at 9 43 34 PM](https://github.com/Manny-D/Qualys/assets/99146530/fcb296fb-4e14-44e0-b37e-a603e58c4718) <br>
 
-In the Launch Vulnerability Scan pop-up: add a Title, select the Option Profile created earlier, select the Scanner Appliace created at the beginning and add the IP Addresses/Ranges of what you're scanning (not shown in the screenshot), then click Launch: <br>
+In the Launch Vulnerability Scan pop-up, enter the following: 
+- <b>Title</b>
+- select the <b>Option Profile</b> created earlier
+- select the <b>Scanner Appliance</b> created at the beginning
+- add the <b>IPv4 Addresses/Ranges</b> of what you're scanning (not shown in the screenshot)
+- scroll down and click <b>Launch</b> <br>
+
 ![Screenshot 2024-04-01 at 9 48 40 PM](https://github.com/Manny-D/Qualys/assets/99146530/c14f5526-74a1-4549-956b-da9a610f3d52) <br>
 <b>Note</b>: Unless specified, all the other options / settings can be left at their defaults. <br>
 
@@ -116,7 +122,7 @@ In the Launch Vulnerability Scan pop-up: add a Title, select the Option Profile 
 Qualys will now run a non-authenticated scan: <br>
 ![Screenshot 2024-04-01 at 9 57 07 PM](https://github.com/Manny-D/Qualys/assets/99146530/d400a361-fbc0-4de6-b3bb-c97f1f7332af) <br>
 <br>
-If it fails, check if the Windows Firewall / Defender is enabled on your VM. If so, disable it and run the scan again. <br>
+If it fails, check if Windows Firewall / Defender is enabled on your VM. If so, disable it and run the scan again. <br>
 
 <br>
 
@@ -124,7 +130,9 @@ If it fails, check if the Windows Firewall / Defender is enabled on your VM. If 
 The scan yielded negligable results: <br>
 ![Screenshot 2024-04-01 at 10 00 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/63ca8466-cfa0-4ebd-ac36-d7e29d1faf08) <br>
 
-Non-authenticated scans offer limited visibility, mimicking an external attacker and missing internal vulnerabilities. Authenticated scans use credentials for deeper checks, providing a more complete picture.
+Non-authenticated scans offer limited visibility, mimicking an external attacker and missing internal vulnerabilities. 
+
+Authenticated scans use credentials for deeper checks, providing a more complete picture.
 
 So we will run an Authenticated Scan next!
 
@@ -132,38 +140,38 @@ So we will run an Authenticated Scan next!
 
 ### Authenticated Scan - Initial Setup
 <b>Important note</b>: <br>
-In order for the authenticated scan to work properly, I will need to update specific settings in the Admin profile being used within the Windows VM. Under normal circumstances, the Qualys scanning profile would already have this pre-configured. <br>
+In order for the authenticated scan to work properly, we will need to update specific settings in the Admin profile being used within the Windows VM. Under normal circumstances, the Qualys scanning profile would already have this pre-configured. <br>
 
 <b>Services</b>: <br>
 For both Remote Registry and Server <br>
-Startup type: Automatic <br>
+<b>Startup type: Automatic</b> <br>
 Manually Start (if not already running) <br>
 
 <b>Advanced sharing settings</b>: <br>
-Confirm Network Discovery and File and printer sharing are both on. <br> 
+Confirm <b>Network Discovery and File and printer sharing</b> are both on. <br> 
 
 <b>User Account Control (UAC) Settings</b>: <br>
-Set to Never notify <br>
+Set to <b>Never notify</b> <br>
 
 <b>Windows Registry</b>: <br>
 Create a new entry under: <br> 
-Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -> right click -> New -> DWORD (32-bit) Value <br>
-Value name: LocalAccountTokenFilterPolicy <br>
-Value data: 1 <br>
+<b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b> -> right click -> <b>New</b> -> <b>DWORD (32-bit) Value</b> <br>
+<b>Value name: LocalAccountTokenFilterPolicy</b> <br>
+<b>Value data: 1</b> <br>
 
 <br>
 
 ### Running an Authenticated Scan
-Click on Scans -> Authentication -> New -> Operating Systems -> Windows <br>
+Click on <b>Scans</b> -> <b>Authentication</b> -> <b>New</b> -> <b>Operating Systems...</b> -> <b>Windows</b>: <br>
 ![Screenshot 2024-04-01 at 10 27 15 PM](https://github.com/Manny-D/Qualys/assets/99146530/30a854fe-72ed-435d-a317-191857f8dd28) <br>
 
-In the New Windows Record pop-up, enter a title: <br>
+In the <b>New Windows Record</b> pop-up under <b>Record Title</b>, enter a <b>Title</b>: <br>
 ![Screenshot 2024-04-01 at 10 28 41 PM](https://github.com/Manny-D/Qualys/assets/99146530/a15528a4-1036-4692-ac72-39d53c402de6) <br>
 
-Click on the Login Credentals section -> Windows Authentication, tick Local -> under Login, enter in the Windows VM Admin credentials: <br>
+Click on <b>Login Credentals</b> in the left pane -> under <b>Windows Authentication</b>, tick <b>Local</b> -> under <b>Login</b>, enter in the Windows VM Admin credentials: <br>
 ![Screenshot 2024-04-01 at 10 32 16 PM](https://github.com/Manny-D/Qualys/assets/99146530/99fa913e-3967-4326-9a6b-387ea60774e2) <br>
 
-Click on IPs -> add the IP of the Windows VM -> Save: <br>
+Click on <b>IPs</b> in the left pane -> add the IP of the Windows VM -> <b>Save</b>: <br>
 ![Screenshot 2024-04-01 at 10 34 42 PM](https://github.com/Manny-D/Qualys/assets/99146530/5787928b-0bad-4156-b93d-877ffd0fc815) <br>
 
 <br>
