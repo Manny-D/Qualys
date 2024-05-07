@@ -210,23 +210,25 @@ Qualys will now run an authenticated scan: <br>
 <br>
 
 ### Authenticated Scan Results <br>
-117 Vulnerabilities! <br>
+117 Vulnerabilities!! An authenticated scan definitely provides more accurate results, giving a clearer picture of our actual vulnerabilities.<br>
 ![Screenshot 2024-04-01 at 10 59 57 PM](https://github.com/Manny-D/Qualys/assets/99146530/d016a8bb-4374-456b-b482-21c4b29037ab) <br>
 
 <br>
 
-## Prioritizing and Remediating Vulnerabilities then Re-scanning to Verify Results <br>
-Qualys reports will detail each vulnerability, including its Severity, potential Impact, and a Solution section. <br>
+### Prioritizing, Assessing and Remediating Vulnerabilities <br>
+Expanding a vulnerability yields details like: <b>Severity</b>, <b>Associated CVEs</b>, <b>Threat</b>, <b>Potential Impact</b>, and suggested <b>Solution(s)</b>, all which aid in the Prioritization, Assessment, Reporting, and Remediation of them. <br>
 
-This section often suggests updates, patches, or configuration changes to address the issue. <br>
 ![Screenshot 2024-04-05 at 8 41 43 PM](https://github.com/Manny-D/Qualys/assets/99146530/455a612b-6596-4614-b3ee-30c00f38d0d2) <br>
 
 We should focus on addressing critical and high-risk issues first, considering factors like exploitability and potential damage. Depending on the vulnerability, this might involve patching software, updating configurations, or removing unused components. 
 
-After applying the "fixes", we can run another authenticated scan to validate our remediation efforts.
+<br>
+
+### Re-scanning to Verify Results <br>
+After applying suggestion solutions, we can run another authenticated scan to validate our remediation efforts.
 ![Screenshot 2024-04-01 at 11 08 01 PM](https://github.com/Manny-D/Qualys/assets/99146530/3cf3f6c0-fb94-484e-92ac-8dc7f2a4dca7) <br>
 <br>
-Vulnerabilities were reduced to 27! 
+Progress!! The vulnerabilities were reduced to 27! 
 
 <br>
 
